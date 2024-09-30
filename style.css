@@ -14,6 +14,9 @@ header {
     background-color: white;
 }
 
+#navbar{
+    display: none;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -214,6 +217,7 @@ header {
  
  .subject h2 {
     padding-left: 16px;
+    padding-top: 16px;
  }
  
  .subject p {
@@ -357,6 +361,20 @@ footer ul li a:hover {
     header{
         display: none;
     }
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    #navbar li{
+        list-style: none;
+
+    }
+
+    
     .hero {
         display: flex;
         align-content: center;
@@ -397,7 +415,7 @@ footer ul li a:hover {
     }
     .lerning{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         grid-gap: 32px;
         height: auto;
     }
@@ -428,6 +446,7 @@ footer ul li a:hover {
         width: 100%;
         display: flex;
         justify-content: center;
+        
     }
     footer li {
         display: none;
