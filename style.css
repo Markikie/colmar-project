@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto;
+    font-family: roboto, sans-serif;
 }
 
 /* navbar */
@@ -51,14 +51,19 @@
 
 
 /* section hero */
+#hero{
+    width: 100%;
+}
 .hero {
     display: flex;
-    background-color: #d8d8d8;
+    background-color: #eaebec;
+    width: 100%;
 }
 
 .banner {
     display: flex;
     align-items: center;
+    
 }
 
 .banner img {
@@ -92,3 +97,122 @@
     background-color: antiquewhite;
     color: #333;
 }
+/* section hero */
+
+/* section info */
+#information {
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px;
+    width: 60%;
+    height: 100%;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info h2 {
+    font-size: 50px;
+    margin: 32px 0;
+}
+
+.info p {
+    margin-bottom: 32px;
+}
+
+.info-aside{
+    border-left: #eaebec solid 1px;
+    margin-left: 16px;
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eaebec;
+    width: 100%;
+}
+
+ .aside img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.info-aside div {
+
+    margin-top: 16px;
+}
+
+.aside a {
+    text-decoration: none;
+}
+
+.aside:hover {
+    background-color: lightgray;
+}
+/* section info */
+
+/* section course */
+.course {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaebec;
+    margin: 32px 0;
+ }
+ 
+ .course h1 {
+     margin: 32px 0;
+     text-align: center;
+     font-size: 40px;
+ }
+ 
+ .learning {
+     margin: 32px 72px;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-gap: 32px;
+     
+     
+     
+ }
+ 
+ .subject img {
+     height: auto;
+     width: 100%;
+ 
+     
+ 
+ }
+ 
+ .subject {
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     height: auto;
+     
+ }
+ 
+ .subject h2 {
+     margin: 16px  0 8px 16px;
+ }
+ 
+ .subject p {
+     margin: 16px  0 8px 16px;
+
+ }
+
+ .subject:hover {
+    background-color: lightgray;
+ }
+
+ /* section course */
