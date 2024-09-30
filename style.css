@@ -7,6 +7,13 @@
 }
 
 /* navbar */
+header {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: white;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -157,6 +164,10 @@
     text-decoration: none;
 }
 
+.aside h3, p {
+    margin-bottom: 8px;
+}
+
 .aside:hover {
     background-color: lightgray;
 }
@@ -167,48 +178,53 @@
     display: flex;
     flex-direction: column;
     background-color: #eaebec;
-    margin: 32px 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
  }
  
  .course h1 {
-     margin: 32px 0;
-     text-align: center;
-     font-size: 40px;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 40px;
  }
  
  .learning {
-     margin: 32px 72px;
-     display: grid;
-     grid-template-columns: auto auto auto;
-     grid-gap: 32px;
-     
-     
-     
+    margin: 32px 72px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 32px;
+    height: auto;
  }
  
  .subject img {
-     height: auto;
-     width: 100%;
- 
+    height: auto;
+    width: 100%;
+    margin-bottom: 16pxs;
      
- 
  }
  
  .subject {
-     background-color: white;
-     display: flex;
-     flex-direction: column;
-     height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
      
  }
  
  .subject h2 {
-     margin: 16px  0 8px 16px;
+    margin-left: 16px;
  }
  
  .subject p {
-     margin: 16px  0 8px 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    font-size: 18px;
 
+ }
+
+ .subject .bottom {
+    margin-bottom: 16px;
  }
 
  .subject:hover {
@@ -216,3 +232,61 @@
  }
 
  /* section course */
+ #thesis {
+    width: 100%;
+}
+
+.thesis-exhibit {
+    display: flex;
+    width: 100%;
+}
+
+.thesis {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px;
+    width: 60%;
+    height: 100%;
+}
+
+.thesis h2 {
+    font-size: 50px;
+    margin: 32px 0;
+}
+
+.thesis p {
+    margin-bottom: 32px;
+}
+
+.t-aside{
+    margin-left: 16px;
+}
+
+.t-aside {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ .t-aside img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.thesis-aside div {
+
+    margin-top: 16px;
+}
+
+.t-aside h3, p {
+    margin-bottom: 8px;
+}
+
+.t-aside a {
+    text-decoration: none;
+}
+
+.t-aside:hover {
+    background-color: lightgray;
+}
