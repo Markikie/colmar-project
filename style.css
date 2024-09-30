@@ -24,7 +24,7 @@ header {
 .logo {
     display: flex;
     height: 32px;
-    margin-left: 24px;
+    padding-left: 24px;
     font-size: 25px;
 }
 
@@ -41,10 +41,10 @@ header {
 .navbar {
     display: flex;
     gap: 16px;
-    margin-right: 24px;
+    padding-right: 24px;
 }
 
-.navbar li {
+.navbar li{
     list-style: none;
 }
 
@@ -53,9 +53,10 @@ header {
     color: black;
 }
 
-
-/* nav for mobile */
-
+.navbar li a:hover {
+    color: darkolivegreen;
+}
+/* navbar */
 
 /* section hero */
 #hero{
@@ -75,11 +76,11 @@ header {
 
 .banner img {
     width: 60%;
-    margin: 32px 24px;
+    padding: 32px 24px;
 
 }.banner-text {
     color: #4a4a4a;
-    margin-left: 24px;
+    padding-left: 24px;
 }
 
 .banner-text h1 {
@@ -93,7 +94,7 @@ header {
 .banner-text button {
     width: 100%;
     height: 50px;
-    margin: 8px 0;
+    padding: 8px 0;
     margin-top: 60px;
     background-color: #4a4a4a;
     color: seashell;
@@ -119,7 +120,7 @@ header {
 .info {
     display: flex;
     flex-direction: column;
-    margin: 32px 24px;
+    padding: 32px 24px;
     width: 60%;
     height: 100%;
 }
@@ -130,16 +131,16 @@ header {
 
 .info h2 {
     font-size: 50px;
-    margin: 32px 0;
+    padding: 32px 0;
 }
 
 .info p {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 .info-aside{
     border-left: #eaebec solid 1px;
-    margin-left: 16px;
+    padding-left: 16px;
 }
 
 .aside {
@@ -152,12 +153,12 @@ header {
  .aside img {
     width: 35%;
     height: auto;
-    margin: 16px;
+    padding: 16px;
 }
 
 .info-aside div {
 
-    margin-top: 16px;
+    padding-top: 16px;
 }
 
 .aside a {
@@ -165,7 +166,7 @@ header {
 }
 
 .aside h3, p {
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .aside:hover {
@@ -178,18 +179,18 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #eaebec;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
  }
  
  .course h1 {
-    margin-top: 32px;
+    padding-top: 32px;
     text-align: center;
     font-size: 40px;
  }
  
  .learning {
-    margin: 32px 72px;
+    padding: 32px 72px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 32px;
@@ -199,7 +200,7 @@ header {
  .subject img {
     height: auto;
     width: 100%;
-    margin-bottom: 16pxs;
+    padding-bottom: 16pxs;
      
  }
  
@@ -212,19 +213,19 @@ header {
  }
  
  .subject h2 {
-    margin-left: 16px;
+    padding-left: 16px;
  }
  
  .subject p {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 16px;
+    padding: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
     font-size: 18px;
 
  }
 
  .subject .bottom {
-    margin-bottom: 16px;
+    padding: 16px;
  }
 
  .subject:hover {
@@ -232,34 +233,51 @@ header {
  }
 
  /* section course */
+
+ /* section thesis */
  #thesis {
     width: 100%;
+   
 }
 
 .thesis-exhibit {
     display: flex;
     width: 100%;
+    background: lightgray;
+    flex-direction: column;
+}
+
+.thesis-exhibit h1 {
+    padding-top: 32px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.thesis-body{
+    display: flex;
+    width: 100%;
+    background: lightgray;
 }
 
 .thesis {
     display: flex;
     flex-direction: column;
-    margin: 32px 24px;
+    padding: 32px 24px;
     width: 60%;
     height: 100%;
 }
 
 .thesis h2 {
     font-size: 50px;
-    margin: 32px 0;
+    padding: 32px 0;
 }
 
 .thesis p {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 .t-aside{
-    margin-left: 16px;
+    padding-left: 16px;
 }
 
 .t-aside {
@@ -276,11 +294,11 @@ header {
 
 .thesis-aside div {
 
-    margin-top: 16px;
+    padding-top: 16px;
 }
 
 .t-aside h3, p {
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .t-aside a {
@@ -288,5 +306,132 @@ header {
 }
 
 .t-aside:hover {
-    background-color: lightgray;
+    background-color: whitesmoke;
+}
+/* section thesis */
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: lightgray 1px solid;
+    
+}
+
+footer div {
+    padding-top: 16px;
+    padding-left: 24px;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    padding-right: 24px;
+    padding-top: 16px;
+}
+
+footer ul li {
+    list-style: none;
+    
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    
+}
+
+footer ul li a:hover {
+    color: darkolivegreen;
+}
+
+/* footer */
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 600px){
+    
+    header{
+        display: none;
+    }
+    .hero {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+    .info {
+        display: none;
+    }
+    .info-aside{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #eaebec;
+
+    }
+    .aside{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding-bottom: 32px;
+
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .lerning{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 32px;
+        height: auto;
+    }
+    .subject img{
+        display: none;
+    }
+    .subject p{
+        display: none;
+    }
+    .thesis-exhibit{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .thesis h2{
+        display: none;
+    }
+    .thesis p{
+        display: none;
+    }
+    .t-aside{
+        display: none;
+    }
+    .thesis{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    footer li {
+        display: none;
+    }
+
+
 }
